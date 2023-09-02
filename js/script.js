@@ -24,7 +24,7 @@ const displayCategory = async (dataItem) => {
         var callFunc = `activeTab(event); loadData(${catg.category_id})`;
         const li = document.createElement('li');
         li.setAttribute('onclick', callFunc);
-        li.classList = `btn-color light-gray py-2 px-6 rounded cursor-pointer`;
+        li.classList = `btn-color light-gray py-2 px-3 md:px-6 lg:px-6 rounded cursor-pointer`;
         li.id = 'category-tab';
         li.classList.add('active');
         li.innerText = catg.category;
@@ -44,7 +44,7 @@ const displayCard = (dataItem) => {
             const div = document.createElement('div');
             div.innerHTML = `
                 <div class="featured-img cursor-pointer relative">
-                    <img class="w-full h-[12rem] rounded-md" src="${item?.thumbnail}" alt="">
+                    <img class="w-full h-[16rem] md:h-[10rem] lg:h-[12rem] rounded-md" src="${item?.thumbnail}" alt="">
                     ${(item?.others?.posted_date) ? showTime(item?.others?.posted_date) : ''}
                 </div>
                 <div class="flex gap-2 mt-4">
