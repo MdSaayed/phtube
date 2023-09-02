@@ -44,7 +44,7 @@ const displayCard = (dataItem) => {
             const div = document.createElement('div');
             div.innerHTML = `
                 <div class="featured-img cursor-pointer relative">
-                    <img class="w-full h-[16rem] md:h-[10rem] lg:h-[12rem] rounded-md" src="${item?.thumbnail}" alt="">
+                    <img class="w-full h-[12rem] md:h-[10rem] lg:h-[12rem] rounded-md" src="${item?.thumbnail}" alt="">
                     ${(item?.others?.posted_date) ? showTime(item?.others?.posted_date) : ''}
                 </div>
                 <div class="flex gap-2 mt-4">
