@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph tube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="font-inter">
+    <!-- header -->
+    <header>
+        <nav class="container mx-auto flex justify-between items-center py-4 border-b-[1px]">
+            <ul>
+                <li><a href="./index.html"><img class="w-32	" src="./images/Logo.png" alt=""></a></li>
+            </ul>
+            <ul>
+                <li><button id="sort-btn" class="btn-color py-2 px-6 rounded font-semibold">Sort by view</button></li>
+            </ul>
+            <ul>
+                <li><a class="primary-color text-white py-2 px-4 rounded font-semibold" href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!-- main section -->
+    <main>
+        <div class="container mx-auto">
+            <div class="tabs">
+                <ul id="category-container" class="flex justify-center my-12 gap-6">
+                    <!-- show here category -->
+                </ul>
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-4">
+                <!-- show card -->
+            </div>
+        </div>
+    </main>
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.btn-color{
+    background-color: rgba(37, 37, 37, 0.20);
+}
+.primary-color{
+    background-color: #FF1F3D;
+}
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+.light-gray{
+    color: rgba(23, 23, 23, 0.70);
+}
+.active:first-child{
+    background-color: #FF1F3D;
+    color: white;
+}
+.current-tab{
+    background-color: #FF1F3D;
+    color: white;
+}
